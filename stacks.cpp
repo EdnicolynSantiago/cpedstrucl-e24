@@ -5,43 +5,41 @@ using namespace std;
 class Stack {
   public:
     Stack(int num) {
-      top = 0;
-      maxelem = num;
-      s = new int[maxelem];
+	      top = 0;
+	      maxelem = num;
+	      s = new int[maxelem];
     }
     
   void push(int t) {
-  
-    if (top == maxelem) 
+	  	if (top == maxelem) 
 		return;
-    s[top++] = t;
+	    s[top++] = t;
   }
   
   int pop() {
-  	
-    if (top == 0) 
+	  	if (top == 0) 
 		return -1;
-    return s[--top];
+	    return s[--top];
   }
   
   void display() {
-    if (top == 0) {
-      cout << "(empty)\n";
-      return;
+    	if (top == 0) {
+      	cout << "(empty)\n";
+      	return;
     }
     for (int t = 0; t < top; t++) 
-		cout << s[t] << " ";
+	cout << s[t] << " ";
     cout << "\n";
   }
   
   int empty() {
-    return top == 0;
+    	return top == 0;
   }
   
   private:
     int * s;
-  int top;
-  int maxelem;
+  	int top;
+  	int maxelem;
 };
 
 void menu(){
@@ -65,25 +63,22 @@ void menu(){
 	break;
 	
 	case 2: 
-	s->pop();
-	break;
+		s->pop();
+		break;
 	
 	case 3:
-	s->display();
-	break;
+		s->display();
+		break;
 	
 	case 4:
-	exit(0);
-	break;
+		exit(0);
+		break;
 	
 	default:
-	cout<<"Wrong input!";
-
-}	
+		cout<<"Wrong input!";}	
 	getch();
 	system("cls");
-}	
-}
+}}
 
 
 int main() {	  
