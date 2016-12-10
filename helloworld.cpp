@@ -3,5 +3,5 @@ using namespace std;
 
 main(){
 cout<<"Hello World!"<<endl;
-  cout<<"CPESTRUCL"<<endl;
+  cout<<"CPEDSTRUCL"<<endl;
 };
