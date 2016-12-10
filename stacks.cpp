@@ -53,13 +53,14 @@ void menu(){
 	cout<<"2: Pop:\n";
 	cout<<"3: Display:\n";
 	cout<<"4: Exit:\n";
-	cout<<"Enter choice: ";
+	cout<<"\nEnter choice: ";
 	cin>>choice;
 	switch (choice)
 {
 	case 1: 
 	cout<<"Input a number to push: ";
 	cin>>numberPush;
+	cout<<"press enter to continue";
 	s->push(numberPush);
 	break;
 	
